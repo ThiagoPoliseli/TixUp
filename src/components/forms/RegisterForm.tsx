@@ -74,6 +74,7 @@ export function RegisterForm({ onSwitchForm }: RegisterFormProps) {
             id="register-password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
+            maxLength={14}
             className={`w-full pl-10 pr-4 py-2 rounded-lg border ${
               password && password.length < 6
                 ? 'border-red-300 focus:ring-red-500'
